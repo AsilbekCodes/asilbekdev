@@ -1,0 +1,268 @@
+<?php
+
+return [
+    'private' => "Этот бот приватный.\n\nВаш Telegram ID: <code>:id</code>.",
+    'unknown' => "Здесь нет суммы.
+
+Чтобы записать деньги, напишите <b>в одной строке</b> что и сколько:
+<code>обед 25000</code> · <code>такси 12k</code> · <code>+зарплата 5 млн</code>
+
+Кнопки ниже тоже работают.",
+
+    'help' => [
+        'title' => '❓ <b>Как работает бот</b>',
+        'money_title' => '<b>1. Записать деньги</b>',
+        'money' => "Напишите в одной строке что и сколько — никаких кнопок:\n<code>обед 25000</code>\n<code>такси 12k</code>\n<code>коммуналка 350 тыс</code>\n\nДля прихода поставьте впереди <b>+</b> или напишите «зарплата», «доход»:\n<code>+зарплата 5 млн</code>",
+        'category_title' => '<b>2. Категории</b>',
+        'category' => 'Категорию определяю по слову. Если не узнал — спрошу и запомню ваш ответ, в следующий раз пойму сам. Если ошибся, есть кнопка <b>🏷 Сменить категорию</b>.',
+        'plans_title' => '<b>3. Планы</b>',
+        'plans' => 'Планы заводятся в панели, а бот напоминает вовремя и показывает их в <b>📋 Сегодня</b>. Заняты — отметьте <b>🚦 Статус</b>, и напоминания замолчат.',
+        'careful' => '<i>Двузначное число суммой не считается: «утром в 8 пробежка» — это план, а не расход.</i>',
+    ],
+
+    'btn' => [
+        'today' => '📋 Сегодня',
+        'tomorrow' => '📅 Завтра',
+        'prev' => '◀️ Пред. день',
+        'next' => 'След. день ▶️',
+        'stats' => '📊 Статистика',
+        'status' => '🚦 Статус',
+        'refresh' => '🔄 Обновить',
+        'back' => '◀️ Назад',
+        'done' => '✅ Готово',
+        'not_done' => '❌ Не сделал',
+        'later' => '⏳ Позже',
+        'free_again' => '🏁 Я освободился',
+        'minutes' => '⏱ +:count мин',
+        'hour' => '🕐 +1 час',
+        'evening' => '🌙 Вечером',
+        'rest_of_day' => '🌇 До конца дня',
+        'money' => '💰 Деньги',
+        'week' => '🗓 Эта неделя',
+        'month' => '📆 Этот месяц',
+        'recent' => '🧾 Последние записи',
+        'undo' => '🗑 Удалить',
+        'skip' => '⏭ Пропустить',
+        'change_category' => '🏷 Сменить категорию',
+        'all_categories' => '🗂 Все категории',
+        'add_expense' => '➕ Расход',
+        'add_income' => '➕ Приход',
+        'today_money' => '📅 Сегодня по деньгам',
+        'time' => '⏱ Время',
+        'add_time' => '➕ Записать время',
+        'act_today' => '📅 Время за сегодня',
+        'stats_today' => '📅 Сегодня',
+        'stats_week' => '🗓 Неделя',
+        'stats_month' => '📆 Месяц',
+        'tasks' => '📋 Задачи',
+        'help' => '❓ Помощь',
+        'language' => '🌐 Язык',
+        'home' => '🏠 Главная',
+    ],
+
+    'welcome' => [
+        'title' => '👋 <b>План и Деньги</b>',
+        'plans' => 'Сегодня: :total планов, :done выполнено.',
+        'spent' => 'Потрачено сегодня: <b>:amount</b>',
+        'ask' => 'Что делаем?',
+        'hint' => 'Напишите <code>обед 25000</code> — запишу сразу.',
+    ],
+
+    'day' => [
+        'empty' => 'Ничего не запланировано.',
+        'settled' => '✅ :done/:settled выполнено · :rate%',
+        'nothing_settled' => 'Пока ничего не закрыто.',
+        'updated' => '<i>🕐 Обновлено: :time</i>',
+    ],
+
+    'stats' => [
+        'title' => '📊 <b>Ваши цифры</b>',
+        'week' => '<b>Эта неделя</b>',
+        'month' => '<b>Этот месяц</b>',
+        'plans' => 'Планов: :total · Выполнено: :completed',
+        'rate' => 'Показатель: :raw% (честный :true%)',
+        'time' => '⏱ Запланировано :planned · Фактически :actual',
+    ],
+
+    'plan' => [
+        'gone' => '⚠️ Этого плана больше нет.',
+        'pushed' => '↩️ Перенесён :count×',
+        'status' => '<i>Статус: :status</i>',
+        'fail_question' => 'Что помешало?',
+        'later_question' => 'Когда напомнить снова?',
+    ],
+
+    'interrupt' => [
+        'title' => '🚨 <b>Укажите статус</b>',
+        'hint' => 'Пока вы заняты, напоминания молчат.',
+        'how_long' => 'Насколько вы заняты?',
+        'until' => 'До :time. Напоминания на паузе.',
+        'moved' => 'Перенесено планов: :count.',
+        'nothing_moved' => 'Переносить было нечего.',
+        'untouched' => 'Остальные планы не тронуты — решите сами, когда вернётесь.',
+    ],
+
+    'plan_status' => [
+        'pending' => 'Ожидает',
+        'in_progress' => 'В процессе',
+        'completed' => 'Выполнено',
+        'failed' => 'Не выполнено',
+        'postponed' => 'Перенесено',
+        'interrupted' => 'Прервано',
+        'no_response' => 'Без ответа',
+        'cancelled' => 'Отменено',
+    ],
+
+    'fail_reason' => [
+        'no_time' => 'Не хватило времени',
+        'forgot' => 'Забыл',
+        'overloaded' => 'Слишком много дел',
+        'not_important' => 'Оказалось неважным',
+        'other' => 'Другое',
+    ],
+
+    'interrupt_type' => [
+        'meeting' => 'На встрече',
+        'travel' => 'В дороге',
+        'guest' => 'С гостями',
+        'class' => 'На занятии',
+        'work' => 'Занят работой',
+        'rest' => 'Отдыхаю',
+        'emergency' => 'Срочное дело',
+        'other' => 'Другое',
+    ],
+
+    'fin' => [
+        'saved' => '✅ <b>:amount</b> · :category',
+        'saved_uncategorised' => '✅ <b>:amount</b> записано.',
+        'ask_category' => 'В какую категорию?',
+        'today' => 'Сегодня: <b>:amount</b>',
+        'week_so_far' => 'Эта неделя: <b>:amount</b>',
+        'month_so_far' => 'В этом месяце: <b>:amount</b>',
+        'left' => 'Осталось :amount из :budget',
+        'over' => '<b>Превышение на :amount</b> от лимита :budget',
+        'no_budget' => 'Месячный лимит не задан.',
+        'warning' => '⚠️ <b>:category</b> — :used% лимита (:total из :limit).',
+        'undone' => '↩️ Удалено: :amount · :category',
+        'nothing_to_undo' => 'Отменять больше нечего.',
+        'learned' => 'Запомнил — теперь «:word» это :category.',
+        'prompt' => "🌙 Сколько потратили сегодня?\n\nНапишите так: <code>обед 25000</code>, по одной строке. «Ничего» — тоже ответ.",
+        'nothing_today' => 'Сегодня ничего не записано.',
+        'title' => '💰 <b>Деньги</b>',
+        'month_title' => '📆 <b>:month</b>',
+        'by_category' => 'Куда ушло:',
+        'income' => 'Приход: <b>:amount</b>',
+        'expense' => 'Расход: <b>:amount</b>',
+        'balance' => 'Баланс: <b>:amount</b>',
+        'empty_month' => 'В этом месяце пока ничего нет.',
+        'week_title' => '📅 <b>Эта неделя</b>',
+        'recent_title' => '🧾 <b>Последние записи</b>',
+        'empty_recent' => 'Записей пока нет.',
+        'empty_week' => 'На этой неделе пока ничего.',
+        'entries' => 'записей: :count',
+        'pace' => 'Такими темпами к концу месяца: <b>:amount</b>',
+        'uncategorised' => 'Без категории',
+        'pick_category' => 'В какую категорию записать?',
+        'note_line' => '<i>:note</i>',
+        'category_changed' => '🏷 Категория изменена.',
+        'how_to_add' => '<i>Запишите кнопкой или одной строкой: <code>обед 25000</code></i>',
+        'pick_for_expense' => 'На что потратили?',
+        'pick_for_income' => 'Откуда приход?',
+        'ask_amount' => "<b>:category</b> — сколько?\n\nНапишите только число: <code>25000</code>, <code>12k</code> или <code>350 тыс</code>.",
+        'day_title' => '📅 <b>Сегодня</b>',
+        'empty_day' => 'Сегодня пока ничего не записано.',
+    ],
+
+    'report' => [
+        'title_today' => '📊 <b>Отчёт за сегодня</b>',
+        'title_week' => '📊 <b>Отчёт за неделю</b>',
+        'title_month' => '📊 <b>Отчёт за месяц</b>',
+        'when' => '<i>:range</i>',
+        'tasks' => '✅ <b>ЗАДАЧИ</b>',
+        'tasks_line' => '<code>:bar</code> :done/:settled · <b>:rate%</b>',
+        'tasks_pending' => '⏳ в ожидании: :count',
+        'tasks_none' => '<i>Планов нет</i>',
+        'money' => '💰 <b>ДЕНЬГИ</b>',
+        'money_out' => '🔻 Расход: <b>:amount</b>',
+        'money_in' => '🔺 Приход: <b>:amount</b>',
+        'money_none' => '<i>Записей нет</i>',
+        'time' => '⏱ <b>ВРЕМЯ</b>',
+        'time_line' => '<code>:bar</code> <b>:duration</b> · записано :percent%',
+        'time_balance' => '✨ Полезно <b>:good</b> · 🌀 Впустую <b>:bad</b>',
+        'time_none' => '<i>Записей нет</i>',
+        'top' => 'Больше всего:',
+    ],
+
+    'act' => [
+        'title' => '⏱ <b>Время</b>',
+        'today' => 'Сегодня: <b>:duration</b>',
+        'week_so_far' => 'На этой неделе: <b>:duration</b>',
+        'month_so_far' => 'В этом месяце: <b>:duration</b>',
+        'covered' => 'Записано <b>:percent%</b> суток',
+        'covered_period' => 'Записано <b>:percent%</b> периода',
+        'average' => 'В среднем за день: <b>:duration</b>',
+        'by_category' => 'На что ушло:',
+        'saved' => '✅ <b>:duration</b> · :category',
+        'saved_uncategorised' => '✅ <b>:duration</b> записано.',
+        'ask_category' => 'Чем вы занимались?',
+        'pick_for_new' => 'На что ушло время?',
+        'ask_duration' => "<b>:category</b> — сколько времени?\n\nНапример: <code>2 часа</code>, <code>45 минут</code> или <code>1 час 30 мин</code>.",
+        'how_to_add' => '<i>Запишите кнопкой или одной строкой: <code>8 часов спал</code></i>',
+        'day_title' => '📅 <b>Время за сегодня</b>',
+        'week_title' => '🗓 <b>Эта неделя</b>',
+        'month_title' => '📆 <b>:month</b>',
+        'empty_day' => 'Сегодня время ещё не записано.',
+        'empty_week' => 'На этой неделе время ещё не записано.',
+        'empty_month' => 'В этом месяце время ещё не записано.',
+        'recent_title' => '🧾 <b>Последние записи времени</b>',
+        'empty_recent' => 'Записей времени пока нет.',
+        'entries' => 'записей: :count',
+        'undone' => '🗑 Удалено: :duration · :category',
+        'nothing_to_undo' => 'Удалять больше нечего.',
+        'learned' => 'Запомнил — теперь «:word» это :category.',
+        'targets' => 'Цели:',
+        'target_line' => ':category — <b>:spent</b> из :target',
+        'balance' => 'Полезно <b>:good</b> · впустую <b>:bad</b>',
+        'from_status' => 'из статуса',
+        'uncategorised' => 'Без категории',
+        'pick_category' => 'В какую категорию записать?',
+    ],
+
+    'summary' => [
+        'daily' => '📋 <b>Итоги дня — :date</b>',
+        'plans_line' => '📋 :total планов · ✅ :completed выполнено · :rate%',
+        'money_line' => '💰 Потрачено :amount',
+    ],
+
+    'lang' => [
+        'ask' => '🌐 Выберите язык:',
+        'set' => '✅ Язык переключён на русский.',
+    ],
+
+    /*
+    | What Telegram itself shows about the bot — the name on the chat header,
+    | the text on an empty chat, and the "/" menu. None of it lives in the
+    | repository until `telegram:profile` pushes it, so this is the source.
+    | Plain text only: Telegram does not read HTML in a bot description.
+    */
+    'profile' => [
+        'short' => "Планы, расходы и напоминания — всё в одном месте.",
+        'description' => "Личный бот Иқболшоха: планы, расходы и напоминания в одном месте.
+
+О плане напомню вовремя, расход пойму из одной строки: напишите \"еда 25000\" — и запись готова. Вечером сам спрошу, во что обошёлся день.
+
+Бот закрытый: отвечает только своему владельцу.",
+    ],
+
+    'cmd' => [
+        'menu' => 'Главный экран',
+        'today' => 'Планы на сегодня',
+        'tomorrow' => 'Планы на завтра',
+        'status' => 'Сказать, что занят или свободен',
+        'stats' => 'Как прошла неделя',
+        'money' => 'Деньги: сегодня и этот месяц',
+        'language' => 'Сменить язык',
+        'help' => 'Как работает бот',
+        'time' => 'Время: день, неделя, месяц',
+    ],
+];

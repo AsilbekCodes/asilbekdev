@@ -1,0 +1,240 @@
+﻿{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "certificates": "Certificates",
+    "services": "Services",
+    "contact": "Contact",
+    "hireMe": "Hire Me"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "name": "Asilbek",
+    "title": "Full-Stack Developer",
+    "description": "A passionate Full-Stack Developer from Samarkand with over 5 years of experience in building modern web applications. I specialize in Laravel, React, and scalable system architecture, delivering fast, secure, and user-focused digital products from concept to deployment.",
+    "viewPortfolio": "View Portfolio",
+    "downloadCV": "Portfolio (PDF)",
+
+    "donate": "Donate",
+    "availableForHire": "Available for hire",
+    "trustedBy": "Trusted by companies like:",
+    "techStack": "My Tech Stack",
+    "technologiesILove": "Technologies I Love Working With",
+    "featuredProjects": "Featured Projects",
+    "someRecentWork": "Some of My Recent Work",
+    "journeyTitle": "By the Numbers",
+    "journeyDescription": "Quick facts about my journey.",
+    "subtitle": "Building scalable web applications with Laravel, React, and modern cloud infrastructure.",
+    "trustedSkills": "Trusted Technologies"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "A diverse set of battle-tested technologies I use daily to ship production-ready applications",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "devops": "DevOps & Tools"
+  },
+  "testimonials": {
+    "badge": "// client reviews",
+    "title": "What Clients Say",
+    "subtitle": "Real feedback from people I've worked with on real projects"
+  },
+  "templates": {
+    "badge": "// my saas product",
+    "title": "Templates.uz",
+    "subtitle": "A premium web template marketplace built for businesses",
+    "description": "I built Templates.uz from scratch using Laravel and React — a SaaS marketplace where businesses can find and purchase professional, customizable website templates optimized for the Uzbek market.",
+    "cta": "Visit Templates.uz",
+    "stat1": "50+",
+    "stat1label": "Templates",
+    "stat2": "Laravel + React",
+    "stat2label": "Tech Stack",
+    "stat3": "SaaS",
+    "stat3label": "Business Model",
+    "feature1": "Professional template marketplace",
+    "feature2": "Built with Laravel & React from scratch",
+    "feature3": "E-commerce & payment ready",
+    "feature4": "SEO optimized for Uzbek market"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Who am I?",
+    "description": "My name is Asilbek Abdunabiyev, a Software Engineering graduate of Samarkand State University. I specialize in full-stack development and love solving real-world problems with code.",
+    "subDescription": "Born in Uzbekistan, raised in Samarkand. I believe in continuous learning and align my journey with Islamic values and discipline.",
+    "journey": "My Journey",
+    "journeyDescription": "The path that led me here",
+    "whatMakesDifferent": "What Makes Me Different",
+    "keyHighlights": "Key highlights of my journey",
+    "technicalSkills": "Technical Skills",
+    "beyondCoding": "Beyond Coding",
+    "locationInfo": "SamSU Graduate",
+    "experienceInfo": "5+ Years Exp",
+    "codingPurpose": "Solving with code, guided by purpose",
+    "advanced": "Advanced"
+  },
+  "portfolio": {
+    "title": "My Portfolio",
+    "description": "A collection of projects that showcase my skills in full-stack development, from simple websites to complex SaaS platforms.",
+    "likeWhatYouSee": "Like What You See?",
+    "startProject": "Start a Project",
+    "letsDiscuss": "Let's discuss your next project and make it happen.",
+    "featured": "Featured",
+    "viewProject": "View Project",
+    "liveDemo": "Live Demo",
+    "github": "GitHub",
+    "noProjects": "No projects found for this category",
+    "tryDifferent": "Try selecting a different filter",
+    "viewAllProjects": "View All Projects",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-Stack"
+    }
+  },
+  "certificates": {
+    "title": "Certificates & Achievements",
+    "description": "Certificates, diplomas, awards and courses I have earned along the way.",
+    "all": "All",
+    "view": "View",
+    "empty": "Nothing has been added yet.",
+    "close": "Close",
+    "types": {
+      "certificate": "Certificate",
+      "diploma": "Diploma",
+      "award": "Award",
+      "course": "Course",
+      "letter": "Letter of thanks",
+      "other": "Other"
+    }
+  },
+  "teaching": {
+    "badge": "Teaching",
+    "title": "I teach programming",
+    "description": "At IT Markaz in Samarkand I teach groups in C++, Frontend and Backend development. I teach from zero through hands-on projects — my students write code from the first lesson and finish the course with a project of their own.",
+    "cta": "Join a class",
+    "facts": {
+      "studentsValue": "160+",
+      "students": "Students",
+      "coursesValue": "3",
+      "courses": "Tracks: C++, Frontend, Backend",
+      "placeValue": "IT Markaz",
+      "place": "Samarkand"
+    },
+    "courses": {
+      "cpp": {
+        "title": "Programming Fundamentals (C++)",
+        "description": "Algorithmic thinking and programming logic from zero: variables, conditions, loops, functions and problem solving.",
+        "topics": "C++ · Algorithms · Problem solving"
+      },
+      "frontend": {
+        "title": "Web Development — Frontend",
+        "description": "Building modern, responsive websites: from page structure to interactive applications.",
+        "topics": "HTML · CSS · JavaScript · React"
+      },
+      "backend": {
+        "title": "Web Development — Backend",
+        "description": "The server side, databases and APIs: building a real project from start to finish.",
+        "topics": "PHP · Laravel · MySQL · REST API"
+      }
+    }
+  },
+  "services": {
+    "title": "My Services",
+    "description": "Professional web development services tailored to bring your ideas to life. From concept to deployment, I've got you covered.",
+    "howIWorkTitle": "How I Work",
+    "howIWorkDescription": "My proven process for delivering excellent results",
+    "getStarted": "Get Started",
+    "requestService": "Request This Service",
+    "categories": {
+      "all": "All Services",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-Stack",
+      "special": "Special"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "service": "Selected Service",
+      "message": "Additional Message (optional)",
+      "submit": "Submit Request",
+      "success": "Thank you! Your request has been received.",
+      "error": "Oops! Something went wrong. Please try again."
+    }
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Got a project in mind or just want to say Salaam? I'd love to hear from you. Let's create something amazing together.",
+    "sendMessage": "Send Me a Message",
+    "yourName": "Your Name",
+    "emailAddress": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessageBtn": "Send Message",
+    "namePlaceholder": "Enter your full name",
+    "emailPlaceholder": "your-email@example.com",
+    "subjectPlaceholder": "What's this about?",
+    "messagePlaceholder": "Tell me about your project...",
+    "getInTouch": "Get in Touch",
+    "getInTouchDesc": "I'm always excited to work on new projects and collaborate with great people. Whether you have a project in mind or just want to chat, feel free to reach out!",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "followMe": "Follow Me",
+    "quickResponse": "Quick Response Guarantee",
+    "quickResponseDesc": "I typically respond to all inquiries within 24 hours. For urgent projects, feel free to call or message me directly.",
+    "basedIn": "Based in Samarkand",
+    "basedInDesc": "Located in the historic city of Samarkand, Uzbekistan. Available for remote work worldwide and local meetings in Samarkand."
+  },
+  "seo": {
+    "home": {
+      "title": "Asilbek Abdunabiyev| Full-Stack Developer (Laravel & React)",
+      "description": "Portfolio of Asilbek Abdunabiyev, a Full-Stack Developer from Samarkand, Uzbekistan specializing in Laravel, React, and scalable SaaS platforms.",
+      "keywords": "Asilbek Abdunabiyev, Full-Stack Developer, Laravel developer, React developer, web development Uzbekistan, Samarkand developer, freelance developer"
+    },
+    "about": {
+      "title": "About Asilbek | Software Engineer in Uzbekistan",
+      "description": "Learn about Asilbek Abdunabiyev's journey from Software Engineering at SamSU to building SaaS platforms like Templates.uz and mentoring over 70 developers.",
+      "keywords": "about Asilbek, software engineer Samarkand, SamSU graduate, Laravel expert, tech mentor Uzbekistan"
+    },
+    "portfolio": {
+      "title": "Projects & Portfolio | Asilbek Dev",
+      "description": "Explore custom web applications, SaaS platforms, and dynamic websites built by Asilbek using React, Tailwind CSS, PHP, and Laravel.",
+      "keywords": "full-stack portfolio, web app projects, SaaS developer, Laravel projects, React apps, custom website development"
+    },
+    "certificates": {
+      "title": "Certificates & Achievements | Asilbek Dev",
+      "description": "Asilbek Abdunabiyev's certificates, diplomas, awards and completed courses in software development.",
+      "keywords": "Asilbek certificates, developer certificates, awards, diplomas, courses"
+    },
+    "services": {
+      "title": "Web Development Services | UI/UX, APIs & Full-Stack Apps",
+      "description": "Professional freelance web development services: UI/UX design, custom REST APIs, Chatbot development, and complete Full-Stack web applications.",
+      "keywords": "web development services, hire freelance developer, API development, UI/UX design, chatbot developer, full-stack application development"
+    },
+    "contact": {
+      "title": "Contact Me | Hire a Full-Stack Developer",
+      "description": "Looking to build a digital product? Get in touch with Asilbek to discuss your next web development project. Available for remote work.",
+      "keywords": "hire developer, contact software engineer, freelance web developer Uzbekistan, remote full-stack developer"
+    },
+    "notFound": {
+      "title": "Page Not Found | Asilbek.uz",
+      "heading": "Page Not Found",
+      "description": "The page you're looking for doesn't exist or has been moved to a new location.",
+      "goHome": "Go Home",
+      "viewPortfolio": "View Portfolio",
+      "errorCode": "Error"
+    }
+  },
+  "footer": {
+    "description": "Bringing your vision to life through clean, modern code and design.",
+    "navigation": "Navigation",
+    "resources": "Resources",
+    "contact": "Contact",
+    "copyright": "Asilbek dev. All rights reserved."
+  }
+}

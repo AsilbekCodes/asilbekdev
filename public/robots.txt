@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://asilbekdev.uz/sitemap.xml
+
+# Disallow private or irrelevant paths
+Disallow: /uploads/
+Disallow: /send-message.php

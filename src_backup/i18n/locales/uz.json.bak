@@ -1,0 +1,238 @@
+﻿{
+  "nav": {
+    "home": "Asosiy",
+    "about": "Men haqimda",
+    "portfolio": "Portfel",
+    "certificates": "Sertifikatlar",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "hireMe": "Meni yollash"
+  },
+  "home": {
+    "greeting": "Salom, men",
+    "name": "Asilbek",
+    "title": "Full-Stack Dasturchi",
+    "description": "Jizzaxlik full-stack dasturchi. 4 yildan ortiq tajribam bor, Node.js, JavaScript, Python va PHP yordamida veb-ilovalar hamda Telegram-botlar yarataman. Ta’lim, turizm va fintech sohalarida 70,000+ foydalanuvchiga xizmat qiladigan loyihalar qilganman, shu jumladan oyiga $10,000+ tranzaksiyani qayta ishlaydigan to’lov tizimi ham.",
+    "viewPortfolio": "Portfelni ko'rish",
+    "downloadCV": "Portfolio (PDF)",
+    "availableForHire": "Yollash uchun ochiq",
+    "trustedBy": "Ishongan kompaniyalar:",
+    "techStack": "Mening texnologiyalarim",
+    "technologiesILove": "Men ishlashni yaxshi ko'radigan texnologiyalar",
+    "featuredProjects": "Sara loyihalar",
+    "someRecentWork": "Ba'zi so'nggi ishlarim",
+    "journeyTitle": "Raqamlarda",
+    "journeyDescription": "Mening yo'lim haqida qisqacha ma'lumot.",
+    "subtitle": "Node.js, React va zamonaviy cloud infratuzilmasi yordamida kengaytiriladigan veb-ilovalar yarataman.",
+    "trustedSkills": "Ishonchli texnologiyalar"
+  },
+  "skills": {
+    "title": "Texnik Ko'nikmalar",
+    "subtitle": "Har kuni ishlab chiqarish darajasidagi ilovalar yaratish uchun foydalanadigan texnologiyalar",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Ma'lumotlar Bazasi",
+    "devops": "DevOps va Vositalar"
+  },
+  "testimonials": {
+    "badge": "// mijozlar fikri",
+    "title": "Mijozlar Nima Deydi",
+    "subtitle": "Haqiqiy loyihalarda birga ishlagan odamlarning fikrlari"
+  },
+  "templates": {
+    "badge": "// mening saas mahsulotim",
+    "title": "Templates.uz",
+    "subtitle": "Bizneslar uchun premium veb-shablonlar bozori",
+    "description": "Templates.uz ni Laravel va React yordamida noldan yaratdim — O'zbek bozori uchun optimallashtirilgan professional sayt shablonlarini sotib olish mumkin bo'lgan SaaS platformasi.",
+    "cta": "Templates.uz ga o'tish",
+    "stat1": "50+",
+    "stat1label": "Shablonlar",
+    "stat2": "Laravel + React",
+    "stat2label": "Texnologiya",
+    "stat3": "SaaS",
+    "stat3label": "Biznes modeli",
+    "feature1": "Professional shablon bozori",
+    "feature2": "Laravel va React bilan noldan yaratilgan",
+    "feature3": "E-commerce va to'lov tayyor",
+    "feature4": "O'zbek bozori uchun SEO optimallashtirilgan"
+  },
+  "about": {
+    "title": "Men haqimda",
+    "subtitle": "Men kimman?",
+    "description": "Mening ismim Asilbek Abdunabiyev, Samarqand davlat universitetining Iqtisodiyot yo'nalishi 1-bosqich talabasiman. Men full-stack dasturlashga ixtisoslashganman va real muammolarni kod orqali hal qilishni yaxshi ko'raman.",
+    "subDescription": "O'zbekistonda tug'ilganman va Samarqandda o'sganman. Men doimiy izlanishga ishonaman va o'z yo'limni Islomiy qadriyatlar hamda tartib-intizom bilan bog'layman.",
+    "journey": "Mening yo'lim",
+    "journeyDescription": "Meni shu yerga olib kelgan yo'l",
+    "whatMakesDifferent": "Meni nima ajratib turadi",
+    "keyHighlights": "Yo'limdagi asosiy yutuqlar",
+    "technicalSkills": "Texnik ko'nikmalar",
+    "beyondCoding": "Dasturlashdan tashqari",
+    "locationInfo": "SamDU Talabasi",
+    "experienceInfo": "4+ Yillik Tajriba",
+    "codingPurpose": "Kod orqali yechim, maqsad bilan boshqariladi",
+    "advanced": "Ilg'or"
+  },
+  "portfolio": {
+    "title": "Mening Portfelim",
+    "description": "Oddiy veb-saytlardan tortib murakkab SaaS platformalarigacha bo'lgan full-stack dasturlash ko'nikmalarimni namoyish etuvchi loyihalar to'plami.",
+    "likeWhatYouSee": "Ko'rganlaringiz yoqdimi?",
+    "startProject": "Loyihani boshlash",
+    "letsDiscuss": "Keyingi loyihangizni muhokama qilaylik va uni amalga oshiraylik.",
+    "featured": "Tavsiya etilgan",
+    "viewProject": "Loyihani ko'rish",
+    "liveDemo": "Jonli namoyish",
+    "github": "GitHub",
+    "noProjects": "Bu toifa uchun loyihalar topilmadi",
+    "tryDifferent": "Boshqa filtrni tanlab ko'ring",
+    "viewAllProjects": "Barcha loyihalarni ko'rish",
+    "categories": {
+      "all": "Barchasi",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-Stack"
+    }
+  },
+  "certificates": {
+    "title": "Sertifikatlar va yutuqlar",
+    "description": "Yo'l davomida olgan sertifikatlarim, diplomlarim, mukofotlarim va tugatgan kurslarim.",
+    "all": "Barchasi",
+    "view": "Ko'rish",
+    "empty": "Hozircha hech narsa qo'shilmagan.",
+    "close": "Yopish",
+    "types": {
+      "certificate": "Sertifikat",
+      "diploma": "Diplom",
+      "award": "Mukofot",
+      "course": "Kurs",
+      "letter": "Tashakkurnoma",
+      "other": "Boshqa"
+    }
+  },
+  "teaching": {
+    "badge": "O'qituvchilik",
+    "title": "Dasturlashni o'rgataman",
+    "description": "Samarqanddagi IT Markazda JavaScript, Frontend va Backend bo'yicha guruhlarga dars beraman. Dasturlashni noldan, amaliy loyihalar orqali o'rgataman — o'quvchilarim birinchi darsdanoq kod yozadi va kursni o'z loyihasi bilan tugatadi.",
+    "cta": "Darsga yozilish",
+    "facts": {
+      "studentsValue": "50+",
+      "students": "O'quvchilar",
+      "coursesValue": "3",
+      "courses": "Yo'nalish: JavaScript, Frontend, Backend",
+      "placeValue": "IT Markaz",
+      "place": "Samarqand"
+    },
+    "courses": {
+      "cpp": {
+        "title": "Dasturlash asoslari (JavaScript)",
+        "description": "Algoritmik fikrlash va dasturlash mantig'i noldan: o'zgaruvchilar, shartlar, sikllar, funksiyalar va masala yechish.",
+        "topics": "JavaScript · Algoritmlar · Masalalar yechish"
+      },
+      "frontend": {
+        "title": "Web dasturlash — Frontend",
+        "description": "Zamonaviy, moslashuvchan saytlar yaratish: sahifa tuzilishidan interaktiv ilovalargacha.",
+        "topics": "HTML · CSS · JavaScript · React"
+      },
+      "backend": {
+        "title": "Web dasturlash — Backend",
+        "description": "Server tomoni, ma'lumotlar bazasi va API: haqiqiy loyihani boshidan oxirigacha qurish.",
+        "topics": "Node.js · Python · PHP · MySQL · REST API"
+      }
+    }
+  },
+  "services": {
+    "title": "Mening Xizmatlarim",
+    "description": "G'oyalaringizni hayotga tatbiq etish uchun moslashtirilgan professional veb-dasturlash xizmatlari. G'oyadan tortib to ishga tushirishgacha, men sizga yordam beraman.",
+    "howIWorkTitle": "Qanday ishlayman",
+    "howIWorkDescription": "Ajoyib natijalar beradigan sinovdan o'tgan jarayonim",
+    "getStarted": "Boshlash",
+    "requestService": "Bu xizmatga buyurtma berish",
+    "categories": {
+      "all": "Barcha Xizmatlar",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-Stack",
+      "special": "Maxsus"
+    },
+    "form": {
+      "name": "Ismingiz",
+      "email": "Elektron pochta",
+      "phone": "Telefon raqam",
+      "service": "Tanlangan xizmat",
+      "message": "Qo'shimcha xabar (ixtiyoriy)",
+      "submit": "So'rov yuborish",
+      "success": "Rahmat! So'rovingiz qabul qilindi.",
+      "error": "Obbo! Nimadir xato ketdi. Iltimos, qaytadan urinib ko'ring."
+    }
+  },
+  "contact": {
+    "title": "Keling, birga ishlaymiz",
+    "description": "Loyiha haqida o'ylayapsizmi yoki shunchaki Salom demoqchimisiz? Sizdan eshitishdan xursand bo'laman. Keling, birgalikda ajoyib narsa yaratamiz.",
+    "sendMessage": "Menga xabar yuboring",
+    "yourName": "Ismingiz",
+    "emailAddress": "Elektron pochta manzili",
+    "subject": "Mavzu",
+    "message": "Xabar",
+    "sendMessageBtn": "Xabar yuborish",
+    "namePlaceholder": "To'liq ismingizni kiriting",
+    "emailPlaceholder": "sizning-pochtangiz@misol.uz",
+    "subjectPlaceholder": "Bu nima haqida?",
+    "messagePlaceholder": "Menga loyihangiz haqida so'zlab bering...",
+    "getInTouch": "Aloqaga chiqing",
+    "getInTouchDesc": "Men har doim yangi loyihalar ustida ishlashdan va ajoyib insonlar bilan hamkorlik qilishdan xursandman. Loyihangiz bo'ladimi yoki shunchaki suhbatlashmoqchimisiz, bemalol aloqaga chiqing!",
+    "email": "Elektron pochta",
+    "phone": "Telefon",
+    "location": "Manzil",
+    "followMe": "Meni kuzating",
+    "quickResponse": "Tezkor javob kafolati",
+    "quickResponseDesc": "Odatda barcha so'rovlarga 24 soat ichida javob beraman. Shoshilinch loyihalar uchun to'g'ridan-to'g'ri qo'ng'iroq qilishingiz yoki xabar yozishingiz mumkin.",
+    "basedIn": "Samarqandda joylashgan",
+    "basedInDesc": "O'zbekistonning tarixiy shahri Samarqandda joylashganman. Butun dunyo bo'ylab masofaviy ishlash va Samarqandda yuzma-yuz uchrashuvlar uchun ochiqman."
+  },
+  "seo": {
+    "home": {
+      "title": "Asilbek Abdunabiyev | Full-Stack Dasturchi (Node.js & React)",
+      "description": "Samarqandlik Full-Stack dasturchi Asilbek Abdunabiyevning portfel sayti. Node.js, React va kengaytiriladigan SaaS platformalarini yaratishga ixtisoslashgan.",
+      "keywords": "Asilbek Abdunabiyev, Full-Stack Dasturchi, Node.js dasturchi, React dasturchi, veb dasturlash O'zbekiston, Samarqand dasturchi, frilans dasturchi"
+    },
+    "about": {
+      "title": "Asilbek haqida | O'zbekistonda Dasturiy Injiniring Mutaxassisi",
+      "description": "Asilbek Abdunabiyevning SamDU'dagi o'qishidan boshlab Templates.uz kabi SaaS platformalarini yaratish va 70 dan ortiq dasturchilarga ustozlik qilishigacha bo'lgan yo'li haqida bilib oling.",
+      "keywords": "Asilbek haqida, dasturiy injiniring Samarqand, SamDU bitiruvchisi, Laravel ekspert, IT mentor O'zbekiston"
+    },
+    "portfolio": {
+      "title": "Loyihalar va Portfel | Asilbek Dev",
+      "description": "Asilbek tomonidan React, Tailwind CSS, PHP va Laravel yordamida yaratilgan maxsus veb-ilovalar, SaaS platformalar va dinamik veb-saytlarni ko'rib chiqing.",
+      "keywords": "full-stack portfel, veb-ilova loyihalari, SaaS dasturchi, Laravel loyihalar, React ilovalar, maxsus veb-sayt yaratish"
+    },
+    "certificates": {
+      "title": "Sertifikatlar va yutuqlar | Asilbek Dev",
+      "description": "Asilbek Abdunabiyevning dasturlash bo'yicha sertifikatlari, diplomlari, mukofotlari va tugatgan kurslari.",
+      "keywords": "Asilbek sertifikatlari, dasturchi sertifikatlari, mukofotlar, diplomlar, kurslar"
+    },
+    "services": {
+      "title": "Veb Dasturlash Xizmatlari | UI/UX, API-lar va Full-Stack Ilovalar",
+      "description": "Professional frilans veb dasturlash xizmatlari: UI/UX dizayn, maxsus REST API-lar, Chatbot yaratish va to'liq Full-Stack veb ilovalarini ishlab chiqish.",
+      "keywords": "veb dasturlash xizmatlari, frilans dasturchi yollash, API yaratish, UI/UX dizayn, chatbot yaratuvchi, full-stack ilova ishlab chiqish"
+    },
+    "contact": {
+      "title": "Bog'lanish | Full-Stack Dasturchini Yollash",
+      "description": "Raqamli mahsulot yaratmoqchimisiz? Keyingi veb-loyiha haqida gaplashish uchun Asilbek bilan bog'laning. Masofaviy ishlash uchun ham tayyor.",
+      "keywords": "dasturchi yollash, dasturiy injiner bilan bog'lanish, frilans veb dasturchi O'zbekiston, masofaviy full-stack dasturchi"
+    },
+    "notFound": {
+      "title": "Sahifa Topilmadi | Asilbek.uz",
+      "heading": "Sahifa Topilmadi",
+      "description": "Siz qidirayotgan sahifa mavjud emas yoki yangi manzilga ko'chirilgan.",
+      "goHome": "Bosh sahifaga",
+      "viewPortfolio": "Portfelni ko'rish",
+      "errorCode": "Xato"
+    }
+  },
+  "footer": {
+    "description": "Toza, zamonaviy kod va dizayn orqali g'oyalaringizni hayotga tatbiq etaman.",
+    "navigation": "Navigatsiya",
+    "resources": "Resurslar",
+    "contact": "Aloqa",
+    "copyright": "asilbek dev. Barcha huquqlar himoyalangan."
+  }
+}
