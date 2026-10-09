@@ -36,7 +36,7 @@ export const TechBadge: React.FC<TechBadgeProps> = ({ name, size = 'sm' }) => {
     >
       {meta?.icon && (
         <img
-          src={meta.icon}
+          src={img(meta.icon)}
           alt=""
           loading="lazy"
           className={`${iconSize} shrink-0`}
