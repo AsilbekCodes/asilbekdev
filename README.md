@@ -1,4 +1,4 @@
-# iqbolshoh.uz
+# asilbekdev.uz
 
 Bitta domenda uchta narsa yashaydi:
 
