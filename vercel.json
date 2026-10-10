@@ -17,6 +17,7 @@
     }
   ],
   "rewrites": [
+    { "source": "/media/:path*", "destination": "https://api.asilbekdev.uz/media/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
