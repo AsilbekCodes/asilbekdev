@@ -54,9 +54,15 @@ export const Contact: React.FC = () => {
     const lang = i18n.language;
 
     try {
-      await sendContact(formData);
+      const res = await sendContact(formData);
 
-      toast.success(successMessages[lang] || successMessages.en, {
+      // Serverdan kelgan xabar bo'lsa shuni, bo'lmasa tilga mos zaxira matnni ko'rsatamiz
+      const text =
+        (res as { message?: string } | undefined)?.message ||
+        successMessages[lang] ||
+        successMessages.en;
+
+      toast.success(text, {
         duration: 3000,
         style: {
           fontSize: "18px",
@@ -172,7 +178,7 @@ export const Contact: React.FC = () => {
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
                   {t("contact.sendMessage")}
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label
                       htmlFor="contact-name"
@@ -240,6 +246,7 @@ export const Contact: React.FC = () => {
                       id="contact-message"
                       name="message"
                       required
+                      minLength={10}
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
