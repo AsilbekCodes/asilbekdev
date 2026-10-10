@@ -15,5 +15,8 @@
       "destination": "https://api.asilbekdev.uz/admin/:path+",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
