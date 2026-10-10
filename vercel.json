@@ -1,0 +1,9 @@
+{ 
+  "redirects": [ 
+    { 
+      "source": "/admin/:path*", 
+      "destination": "https://api.asilbekdev.uz/admin/:path*", 
+      "permanent": false 
+    } 
+    } 
+} 
