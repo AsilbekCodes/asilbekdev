@@ -20,6 +20,17 @@ const Services    = lazy(() => import('./pages/Services').then(m => ({ default: 
 const Contact     = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
 const NotFound    = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
+const KNOWN_PAGES = ['about', 'portfolio', 'certificates', 'services', 'contact'];
+
+/** True when the path is "/", "/:lang" or "/:lang/<known page>". */
+function isKnownPath(pathname: string): boolean {
+  const parts = pathname.split('/').filter(Boolean);
+  if (parts.length === 0) return true;
+  if (!(SUPPORTED_LANGS as readonly string[]).includes(parts[0])) return false;
+  if (parts.length === 1) return true;
+  return parts.length === 2 && KNOWN_PAGES.includes(parts[1]);
+}
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
@@ -34,7 +45,7 @@ function RootRedirect() {
   return <Navigate to={`/${lang}`} replace />;
 }
 
-/** Guards the /:lang segment - shows the 404 page if the value isn't a supported language. */
+/** Guards the /:lang segment - keeps the selected language in sync. */
 function LangLayout() {
   const { lang } = useParams<{ lang: string }>();
   const { i18n } = useTranslation();
@@ -47,13 +58,25 @@ function LangLayout() {
     }
   }, [valid, lang, i18n]);
 
-  if (!valid) return <NotFound />;
+  if (!valid) return null;
   return <Outlet />;
 }
 
 function App() {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
   const helmetContext = {};
+
+  // Unknown path: full-screen 404 without Header and Footer
+  if (!isKnownPath(pathname)) {
+    return (
+      <HelmetProvider context={helmetContext}>
+        <Suspense fallback={<PageLoader />}>
+          <NotFound />
+        </Suspense>
+      </HelmetProvider>
+    );
+  }
 
   return (
     <HelmetProvider context={helmetContext}>
@@ -103,12 +126,9 @@ function App() {
                   <SEO title={t('seo.contact.title')} description={t('seo.contact.description')} keywords={t('seo.contact.keywords')} />
                   <Contact />
                 </>} />
-
-                {/* Unknown page under a valid language, e.g. /uz/salom */}
-                <Route path="*" element={<NotFound />} />
               </Route>
 
-              {/* Unknown top-level path, e.g. /salom */}
+              {/* Safety net: normally handled by isKnownPath above */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
