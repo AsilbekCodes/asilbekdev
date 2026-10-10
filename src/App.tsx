@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation, Navigate, Outlet, useParams, useNavigate } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate, Outlet, useParams } from 'react-router-dom';
 import { useEffect, lazy, Suspense } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
@@ -18,17 +18,7 @@ const Portfolio   = lazy(() => import('./pages/Portfolio').then(m => ({ default:
 const Certificates = lazy(() => import('./pages/Certificates').then(m => ({ default: m.Certificates })));
 const Services    = lazy(() => import('./pages/Services').then(m => ({ default: m.Services })));
 const Contact     = lazy(() => import('./pages/Contact').then(m => ({ default: m.Contact })));
-
-/**
- * Unknown paths are the server's business: nginx hands anything outside the
- * known page list to Laravel, which renders the shared 404 page. Reaching
- * this component means a client-side navigation produced such a path, so the
- * URL is handed back to the server instead of being rendered here.
- */
-function ServerHandled() {
-  useEffect(() => { window.location.reload(); }, []);
-  return <PageLoader />;
-}
+const NotFound    = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFound })));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -44,26 +34,20 @@ function RootRedirect() {
   return <Navigate to={`/${lang}`} replace />;
 }
 
-/** Guards the /:lang segment — redirects to /uz if the value isn't a supported language. */
+/** Guards the /:lang segment - shows the 404 page if the value isn't a supported language. */
 function LangLayout() {
   const { lang } = useParams<{ lang: string }>();
   const { i18n } = useTranslation();
-  const navigate = useNavigate();
+
+  const valid = !!lang && (SUPPORTED_LANGS as readonly string[]).includes(lang);
 
   useEffect(() => {
-    if (!lang || !(SUPPORTED_LANGS as readonly string[]).includes(lang)) {
-      navigate('/uz', { replace: true });
-      return;
-    }
-    if (i18n.language !== lang) {
+    if (valid && i18n.language !== lang) {
       i18n.changeLanguage(lang);
     }
-  }, [lang, i18n, navigate]);
+  }, [valid, lang, i18n]);
 
-  if (!lang || !(SUPPORTED_LANGS as readonly string[]).includes(lang)) {
-    return null;
-  }
-
+  if (!valid) return <NotFound />;
   return <Outlet />;
 }
 
@@ -85,7 +69,7 @@ function App() {
         <main id="main-content" className="flex-grow" tabIndex={-1}>
           <Suspense fallback={<PageLoader />}>
             <Routes>
-              {/* Bare "/" → redirect to saved language */}
+              {/* Bare "/" -> redirect to saved language */}
               <Route index element={<RootRedirect />} />
 
               {/* Language-prefixed routes */}
@@ -120,10 +104,12 @@ function App() {
                   <Contact />
                 </>} />
 
+                {/* Unknown page under a valid language, e.g. /uz/salom */}
+                <Route path="*" element={<NotFound />} />
               </Route>
 
-              {/* 404 — rendered by Laravel, not here */}
-              <Route path="*" element={<ServerHandled />} />
+              {/* Unknown top-level path, e.g. /salom */}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>
