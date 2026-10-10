@@ -29,7 +29,7 @@ class ContactController extends Controller
 
         $message = ContactMessage::create($data + $this->meta($request));
 
-        $this->telegram->send('Yangi xabar — iqbolshoh.uz', [
+        $this->telegram->send('Yangi xabar — asilbekdev.uz', [
             'Ism'   => $message->name,
             'Email' => $message->email,
             'Mavzu' => $message->subject,
@@ -66,7 +66,7 @@ class ContactController extends Controller
             'service_price' => $data['servicePrice'] ?? null,
         ] + $this->meta($request));
 
-        $this->telegram->send('Yangi buyurtma — iqbolshoh.uz', [
+        $this->telegram->send('Yangi buyurtma — asilbekdev.uz', [
             'Ism'     => $order->name,
             'Email'   => $order->email,
             'Telefon' => $order->phone,
