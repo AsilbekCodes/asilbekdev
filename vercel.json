@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/admin",
+      "destination": "https://api.asilbekdev.uz/admin/login",
+      "permanent": false
+    },
+    {
       "source": "/admin/:path*",
       "destination": "https://api.asilbekdev.uz/admin/:path*",
       "permanent": false
