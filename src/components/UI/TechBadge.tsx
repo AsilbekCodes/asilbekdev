@@ -10,10 +10,15 @@ interface TechBadgeProps {
 const FALLBACK_COLOR = '#8B95A5';
 
 /**
- * The icon and colour come from the API's technology map, so a stack the
- * catalogue does not cover yet still renders — as a plain badge in the
- * neutral colour rather than a broken image.
+ * Resolves an icon path from the API into a usable image URL.
+ * Absolute URLs and data URIs are returned as is; relative paths
+ * are resolved from the site root.
  */
+const img = (path: string): string =>
+  /^(https?:)?\/\//.test(path) || path.startsWith('data:')
+    ? path
+    : `/${path.replace(/^\//, '')}`;
+
 export const TechBadge: React.FC<TechBadgeProps> = ({ name, size = 'sm' }) => {
   const { technologies } = useContent();
   const meta = technologies[name];
@@ -28,8 +33,6 @@ export const TechBadge: React.FC<TechBadgeProps> = ({ name, size = 'sm' }) => {
       className={`inline-flex items-center rounded-full border font-semibold ${spacing}`}
       style={{
         color,
-        // Hex with an alpha suffix: one brand colour drives the text, the
-        // hairline border and the tint behind it.
         borderColor: `${color}59`,
         backgroundColor: `${color}1f`,
       }}
